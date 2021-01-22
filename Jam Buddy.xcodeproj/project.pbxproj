@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E11B6FDC24ABE2B6000D4013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B6FDB24ABE2B6000D4013 /* AppDelegate.swift */; };
+		E11B6FDE24ABE2B6000D4013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B6FDD24ABE2B6000D4013 /* SceneDelegate.swift */; };
+		E11B6FE324ABE2B6000D4013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11B6FE124ABE2B6000D4013 /* Main.storyboard */; };
+		E11B6FE524ABE2B8000D4013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11B6FE424ABE2B8000D4013 /* Assets.xcassets */; };
+		E11B6FE824ABE2B8000D4013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11B6FE624ABE2B8000D4013 /* LaunchScreen.storyboard */; };
+		E11B6FF324ABE3E2000D4013 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B6FF224ABE3E2000D4013 /* HomeController.swift */; };
+		E11B6FF724ABE516000D4013 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11B6FF624ABE516000D4013 /* Extensions.swift */; };
+		E12E936724B12F5500CDE38F /* KeySelectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E936624B12F5500CDE38F /* KeySelectionHeaderView.swift */; };
+		E12E936924B13FD000CDE38F /* KeyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12E936824B13FD000CDE38F /* KeyCollectionViewController.swift */; };
+		E140F75524D3D29200DE62E2 /* EMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74924D3D29200DE62E2 /* EMajor.wav */; };
+		E140F75624D3D29200DE62E2 /* DMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74A24D3D29200DE62E2 /* DMajor.wav */; };
+		E140F75724D3D29200DE62E2 /* F♯G♭Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74B24D3D29200DE62E2 /* F♯G♭Major.wav */; };
+		E140F75824D3D29200DE62E2 /* BMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74C24D3D29200DE62E2 /* BMajor.wav */; };
+		E140F75924D3D29200DE62E2 /* CMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74D24D3D29200DE62E2 /* CMajor.wav */; };
+		E140F75A24D3D29200DE62E2 /* A♯B♭Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74E24D3D29200DE62E2 /* A♯B♭Major.wav */; };
+		E140F75B24D3D29200DE62E2 /* FMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F74F24D3D29200DE62E2 /* FMajor.wav */; };
+		E140F75C24D3D29200DE62E2 /* GMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F75024D3D29200DE62E2 /* GMajor.wav */; };
+		E140F75D24D3D29200DE62E2 /* G♯A♭Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F75124D3D29200DE62E2 /* G♯A♭Major.wav */; };
+		E140F75E24D3D29200DE62E2 /* C♯D♭Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F75224D3D29200DE62E2 /* C♯D♭Major.wav */; };
+		E140F75F24D3D29200DE62E2 /* D♯E♭Major.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F75324D3D29200DE62E2 /* D♯E♭Major.wav */; };
+		E140F76024D3D29200DE62E2 /* AMajor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F75424D3D29200DE62E2 /* AMajor.wav */; };
+		E140F76E24D4CA0600DE62E2 /* CMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76224D4CA0600DE62E2 /* CMinor.wav */; };
+		E140F76F24D4CA0600DE62E2 /* BMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76324D4CA0600DE62E2 /* BMinor.wav */; };
+		E140F77024D4CA0600DE62E2 /* A♯B♭Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76424D4CA0600DE62E2 /* A♯B♭Minor.wav */; };
+		E140F77124D4CA0600DE62E2 /* DMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76524D4CA0600DE62E2 /* DMinor.wav */; };
+		E140F77224D4CA0600DE62E2 /* EMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76624D4CA0600DE62E2 /* EMinor.wav */; };
+		E140F77324D4CA0600DE62E2 /* F♯G♭Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76724D4CA0600DE62E2 /* F♯G♭Minor.wav */; };
+		E140F77424D4CA0600DE62E2 /* G♯A♭Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76824D4CA0600DE62E2 /* G♯A♭Minor.wav */; };
+		E140F77524D4CA0600DE62E2 /* C♯D♭Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76924D4CA0600DE62E2 /* C♯D♭Minor.wav */; };
+		E140F77624D4CA0600DE62E2 /* D♯E♭Minor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76A24D4CA0600DE62E2 /* D♯E♭Minor.wav */; };
+		E140F77724D4CA0600DE62E2 /* AMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76B24D4CA0600DE62E2 /* AMinor.wav */; };
+		E140F77824D4CA0600DE62E2 /* GMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76C24D4CA0600DE62E2 /* GMinor.wav */; };
+		E140F77924D4CA0600DE62E2 /* FMinor.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F76D24D4CA0600DE62E2 /* FMinor.wav */; };
+		E140F78724D4DF5A00DE62E2 /* G♯A♭Diminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F77B24D4DF5A00DE62E2 /* G♯A♭Diminished.wav */; };
+		E140F78824D4DF5A00DE62E2 /* D♯E♭Diminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F77C24D4DF5A00DE62E2 /* D♯E♭Diminished.wav */; };
+		E140F78924D4DF5A00DE62E2 /* DDiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F77D24D4DF5A00DE62E2 /* DDiminished.wav */; };
+		E140F78A24D4DF5A00DE62E2 /* A♯B♭Diminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F77E24D4DF5A00DE62E2 /* A♯B♭Diminished.wav */; };
+		E140F78B24D4DF5A00DE62E2 /* GDiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F77F24D4DF5A00DE62E2 /* GDiminished.wav */; };
+		E140F78C24D4DF5A00DE62E2 /* CDiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78024D4DF5A00DE62E2 /* CDiminished.wav */; };
+		E140F78D24D4DF5A00DE62E2 /* BDiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78124D4DF5A00DE62E2 /* BDiminished.wav */; };
+		E140F78E24D4DF5A00DE62E2 /* FDiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78224D4DF5A00DE62E2 /* FDiminished.wav */; };
+		E140F78F24D4DF5A00DE62E2 /* ADiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78324D4DF5A00DE62E2 /* ADiminished.wav */; };
+		E140F79024D4DF5A00DE62E2 /* C♯D♭Diminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78424D4DF5A00DE62E2 /* C♯D♭Diminished.wav */; };
+		E140F79124D4DF5A00DE62E2 /* EDiminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78524D4DF5A00DE62E2 /* EDiminished.wav */; };
+		E140F79224D4DF5A00DE62E2 /* F♯G♭Diminished.wav in Resources */ = {isa = PBXBuildFile; fileRef = E140F78624D4DF5A00DE62E2 /* F♯G♭Diminished.wav */; };
+		E140F79424DE48F400DE62E2 /* ChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140F79324DE48F400DE62E2 /* ChordViewController.swift */; };
+		E1D273DA24B417A5007FFA6F /* KeyFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D273D924B417A5007FFA6F /* KeyFamilyViewController.swift */; };
+		E1D273DC24B57F44007FFA6F /* KeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D273DB24B57F44007FFA6F /* KeyTableViewCell.swift */; };
+		E1DF1F7C24B2EAD7009CA6CD /* KeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF1F7B24B2EAD7009CA6CD /* KeyCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E11B6FD824ABE2B6000D4013 /* Jam Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jam Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11B6FDB24ABE2B6000D4013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E11B6FDD24ABE2B6000D4013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E11B6FE224ABE2B6000D4013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E11B6FE424ABE2B8000D4013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11B6FE724ABE2B8000D4013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11B6FE924ABE2B8000D4013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11B6FF224ABE3E2000D4013 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E11B6FF624ABE516000D4013 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E12E936624B12F5500CDE38F /* KeySelectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeySelectionHeaderView.swift; sourceTree = "<group>"; };
+		E12E936824B13FD000CDE38F /* KeyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCollectionViewController.swift; sourceTree = "<group>"; };
+		E140F74924D3D29200DE62E2 /* EMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = EMajor.wav; sourceTree = "<group>"; };
+		E140F74A24D3D29200DE62E2 /* DMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = DMajor.wav; sourceTree = "<group>"; };
+		E140F74B24D3D29200DE62E2 /* F♯G♭Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F♯G♭Major.wav"; sourceTree = "<group>"; };
+		E140F74C24D3D29200DE62E2 /* BMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BMajor.wav; sourceTree = "<group>"; };
+		E140F74D24D3D29200DE62E2 /* CMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CMajor.wav; sourceTree = "<group>"; };
+		E140F74E24D3D29200DE62E2 /* A♯B♭Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♯B♭Major.wav"; sourceTree = "<group>"; };
+		E140F74F24D3D29200DE62E2 /* FMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FMajor.wav; sourceTree = "<group>"; };
+		E140F75024D3D29200DE62E2 /* GMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GMajor.wav; sourceTree = "<group>"; };
+		E140F75124D3D29200DE62E2 /* G♯A♭Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G♯A♭Major.wav"; sourceTree = "<group>"; };
+		E140F75224D3D29200DE62E2 /* C♯D♭Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C♯D♭Major.wav"; sourceTree = "<group>"; };
+		E140F75324D3D29200DE62E2 /* D♯E♭Major.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D♯E♭Major.wav"; sourceTree = "<group>"; };
+		E140F75424D3D29200DE62E2 /* AMajor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AMajor.wav; sourceTree = "<group>"; };
+		E140F76224D4CA0600DE62E2 /* CMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CMinor.wav; sourceTree = "<group>"; };
+		E140F76324D4CA0600DE62E2 /* BMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BMinor.wav; sourceTree = "<group>"; };
+		E140F76424D4CA0600DE62E2 /* A♯B♭Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♯B♭Minor.wav"; sourceTree = "<group>"; };
+		E140F76524D4CA0600DE62E2 /* DMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = DMinor.wav; sourceTree = "<group>"; };
+		E140F76624D4CA0600DE62E2 /* EMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = EMinor.wav; sourceTree = "<group>"; };
+		E140F76724D4CA0600DE62E2 /* F♯G♭Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F♯G♭Minor.wav"; sourceTree = "<group>"; };
+		E140F76824D4CA0600DE62E2 /* G♯A♭Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G♯A♭Minor.wav"; sourceTree = "<group>"; };
+		E140F76924D4CA0600DE62E2 /* C♯D♭Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C♯D♭Minor.wav"; sourceTree = "<group>"; };
+		E140F76A24D4CA0600DE62E2 /* D♯E♭Minor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D♯E♭Minor.wav"; sourceTree = "<group>"; };
+		E140F76B24D4CA0600DE62E2 /* AMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AMinor.wav; sourceTree = "<group>"; };
+		E140F76C24D4CA0600DE62E2 /* GMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GMinor.wav; sourceTree = "<group>"; };
+		E140F76D24D4CA0600DE62E2 /* FMinor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FMinor.wav; sourceTree = "<group>"; };
+		E140F77B24D4DF5A00DE62E2 /* G♯A♭Diminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "G♯A♭Diminished.wav"; sourceTree = "<group>"; };
+		E140F77C24D4DF5A00DE62E2 /* D♯E♭Diminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D♯E♭Diminished.wav"; sourceTree = "<group>"; };
+		E140F77D24D4DF5A00DE62E2 /* DDiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = DDiminished.wav; sourceTree = "<group>"; };
+		E140F77E24D4DF5A00DE62E2 /* A♯B♭Diminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A♯B♭Diminished.wav"; sourceTree = "<group>"; };
+		E140F77F24D4DF5A00DE62E2 /* GDiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GDiminished.wav; sourceTree = "<group>"; };
+		E140F78024D4DF5A00DE62E2 /* CDiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CDiminished.wav; sourceTree = "<group>"; };
+		E140F78124D4DF5A00DE62E2 /* BDiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BDiminished.wav; sourceTree = "<group>"; };
+		E140F78224D4DF5A00DE62E2 /* FDiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FDiminished.wav; sourceTree = "<group>"; };
+		E140F78324D4DF5A00DE62E2 /* ADiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ADiminished.wav; sourceTree = "<group>"; };
+		E140F78424D4DF5A00DE62E2 /* C♯D♭Diminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "C♯D♭Diminished.wav"; sourceTree = "<group>"; };
+		E140F78524D4DF5A00DE62E2 /* EDiminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = EDiminished.wav; sourceTree = "<group>"; };
+		E140F78624D4DF5A00DE62E2 /* F♯G♭Diminished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "F♯G♭Diminished.wav"; sourceTree = "<group>"; };
+		E140F79324DE48F400DE62E2 /* ChordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordViewController.swift; sourceTree = "<group>"; };
+		E1D273D924B417A5007FFA6F /* KeyFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFamilyViewController.swift; sourceTree = "<group>"; };
+		E1D273DB24B57F44007FFA6F /* KeyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTableViewCell.swift; sourceTree = "<group>"; };
+		E1DF1F7B24B2EAD7009CA6CD /* KeyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11B6FD524ABE2B6000D4013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E11B6FCF24ABE2B6000D4013 = {
+			isa = PBXGroup;
+			children = (
+				E11B6FDA24ABE2B6000D4013 /* Jam Buddy */,
+				E11B6FD924ABE2B6000D4013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11B6FD924ABE2B6000D4013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11B6FD824ABE2B6000D4013 /* Jam Buddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11B6FDA24ABE2B6000D4013 /* Jam Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				E11B6FF124ABE3AC000D4013 /* Model */,
+				E11B6FF024ABE3A9000D4013 /* View */,
+				E11B6FEF24ABE3A7000D4013 /* Controller */,
+				E11B6FF524ABE46B000D4013 /* Utils */,
+				E11B6FDB24ABE2B6000D4013 /* AppDelegate.swift */,
+				E11B6FDD24ABE2B6000D4013 /* SceneDelegate.swift */,
+				E11B6FE124ABE2B6000D4013 /* Main.storyboard */,
+				E140F74824D3D29200DE62E2 /* Major Chords */,
+				E140F76124D4CA0600DE62E2 /* Minor Chords */,
+				E140F77A24D4DF5A00DE62E2 /* Diminished Chords */,
+				E11B6FE424ABE2B8000D4013 /* Assets.xcassets */,
+				E11B6FE624ABE2B8000D4013 /* LaunchScreen.storyboard */,
+				E11B6FE924ABE2B8000D4013 /* Info.plist */,
+			);
+			path = "Jam Buddy";
+			sourceTree = "<group>";
+		};
+		E11B6FEF24ABE3A7000D4013 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E11B6FF224ABE3E2000D4013 /* HomeController.swift */,
+				E12E936824B13FD000CDE38F /* KeyCollectionViewController.swift */,
+				E1D273D924B417A5007FFA6F /* KeyFamilyViewController.swift */,
+				E140F79324DE48F400DE62E2 /* ChordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E11B6FF024ABE3A9000D4013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E12E936624B12F5500CDE38F /* KeySelectionHeaderView.swift */,
+				E1DF1F7B24B2EAD7009CA6CD /* KeyCollectionViewCell.swift */,
+				E1D273DB24B57F44007FFA6F /* KeyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E11B6FF124ABE3AC000D4013 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E11B6FF524ABE46B000D4013 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E11B6FF624ABE516000D4013 /* Extensions.swift */,
+			);
+			name = Utils;
+			path = "New Group/Utils";
+			sourceTree = "<group>";
+		};
+		E140F74824D3D29200DE62E2 /* Major Chords */ = {
+			isa = PBXGroup;
+			children = (
+				E140F74924D3D29200DE62E2 /* EMajor.wav */,
+				E140F74A24D3D29200DE62E2 /* DMajor.wav */,
+				E140F74B24D3D29200DE62E2 /* F♯G♭Major.wav */,
+				E140F74C24D3D29200DE62E2 /* BMajor.wav */,
+				E140F74D24D3D29200DE62E2 /* CMajor.wav */,
+				E140F74E24D3D29200DE62E2 /* A♯B♭Major.wav */,
+				E140F74F24D3D29200DE62E2 /* FMajor.wav */,
+				E140F75024D3D29200DE62E2 /* GMajor.wav */,
+				E140F75124D3D29200DE62E2 /* G♯A♭Major.wav */,
+				E140F75224D3D29200DE62E2 /* C♯D♭Major.wav */,
+				E140F75324D3D29200DE62E2 /* D♯E♭Major.wav */,
+				E140F75424D3D29200DE62E2 /* AMajor.wav */,
+			);
+			path = "Major Chords";
+			sourceTree = "<group>";
+		};
+		E140F76124D4CA0600DE62E2 /* Minor Chords */ = {
+			isa = PBXGroup;
+			children = (
+				E140F76224D4CA0600DE62E2 /* CMinor.wav */,
+				E140F76324D4CA0600DE62E2 /* BMinor.wav */,
+				E140F76424D4CA0600DE62E2 /* A♯B♭Minor.wav */,
+				E140F76524D4CA0600DE62E2 /* DMinor.wav */,
+				E140F76624D4CA0600DE62E2 /* EMinor.wav */,
+				E140F76724D4CA0600DE62E2 /* F♯G♭Minor.wav */,
+				E140F76824D4CA0600DE62E2 /* G♯A♭Minor.wav */,
+				E140F76924D4CA0600DE62E2 /* C♯D♭Minor.wav */,
+				E140F76A24D4CA0600DE62E2 /* D♯E♭Minor.wav */,
+				E140F76B24D4CA0600DE62E2 /* AMinor.wav */,
+				E140F76C24D4CA0600DE62E2 /* GMinor.wav */,
+				E140F76D24D4CA0600DE62E2 /* FMinor.wav */,
+			);
+			path = "Minor Chords";
+			sourceTree = "<group>";
+		};
+		E140F77A24D4DF5A00DE62E2 /* Diminished Chords */ = {
+			isa = PBXGroup;
+			children = (
+				E140F77B24D4DF5A00DE62E2 /* G♯A♭Diminished.wav */,
+				E140F77C24D4DF5A00DE62E2 /* D♯E♭Diminished.wav */,
+				E140F77D24D4DF5A00DE62E2 /* DDiminished.wav */,
+				E140F77E24D4DF5A00DE62E2 /* A♯B♭Diminished.wav */,
+				E140F77F24D4DF5A00DE62E2 /* GDiminished.wav */,
+				E140F78024D4DF5A00DE62E2 /* CDiminished.wav */,
+				E140F78124D4DF5A00DE62E2 /* BDiminished.wav */,
+				E140F78224D4DF5A00DE62E2 /* FDiminished.wav */,
+				E140F78324D4DF5A00DE62E2 /* ADiminished.wav */,
+				E140F78424D4DF5A00DE62E2 /* C♯D♭Diminished.wav */,
+				E140F78524D4DF5A00DE62E2 /* EDiminished.wav */,
+				E140F78624D4DF5A00DE62E2 /* F♯G♭Diminished.wav */,
+			);
+			path = "Diminished Chords";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11B6FD724ABE2B6000D4013 /* Jam Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11B6FEC24ABE2B8000D4013 /* Build configuration list for PBXNativeTarget "Jam Buddy" */;
+			buildPhases = (
+				E11B6FD424ABE2B6000D4013 /* Sources */,
+				E11B6FD524ABE2B6000D4013 /* Frameworks */,
+				E11B6FD624ABE2B6000D4013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jam Buddy";
+			productName = "Jam Buddy";
+			productReference = E11B6FD824ABE2B6000D4013 /* Jam Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11B6FD024ABE2B6000D4013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Robert Guerra";
+				TargetAttributes = {
+					E11B6FD724ABE2B6000D4013 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E11B6FD324ABE2B6000D4013 /* Build configuration list for PBXProject "Jam Buddy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11B6FCF24ABE2B6000D4013;
+			productRefGroup = E11B6FD924ABE2B6000D4013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11B6FD724ABE2B6000D4013 /* Jam Buddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11B6FD624ABE2B6000D4013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E140F77324D4CA0600DE62E2 /* F♯G♭Minor.wav in Resources */,
+				E140F78924D4DF5A00DE62E2 /* DDiminished.wav in Resources */,
+				E140F75724D3D29200DE62E2 /* F♯G♭Major.wav in Resources */,
+				E140F77624D4CA0600DE62E2 /* D♯E♭Minor.wav in Resources */,
+				E140F75624D3D29200DE62E2 /* DMajor.wav in Resources */,
+				E140F77524D4CA0600DE62E2 /* C♯D♭Minor.wav in Resources */,
+				E140F75924D3D29200DE62E2 /* CMajor.wav in Resources */,
+				E140F75E24D3D29200DE62E2 /* C♯D♭Major.wav in Resources */,
+				E140F77224D4CA0600DE62E2 /* EMinor.wav in Resources */,
+				E140F78D24D4DF5A00DE62E2 /* BDiminished.wav in Resources */,
+				E140F75824D3D29200DE62E2 /* BMajor.wav in Resources */,
+				E140F78E24D4DF5A00DE62E2 /* FDiminished.wav in Resources */,
+				E140F78C24D4DF5A00DE62E2 /* CDiminished.wav in Resources */,
+				E140F77424D4CA0600DE62E2 /* G♯A♭Minor.wav in Resources */,
+				E140F77724D4CA0600DE62E2 /* AMinor.wav in Resources */,
+				E140F78724D4DF5A00DE62E2 /* G♯A♭Diminished.wav in Resources */,
+				E140F77024D4CA0600DE62E2 /* A♯B♭Minor.wav in Resources */,
+				E140F77124D4CA0600DE62E2 /* DMinor.wav in Resources */,
+				E140F76F24D4CA0600DE62E2 /* BMinor.wav in Resources */,
+				E140F78B24D4DF5A00DE62E2 /* GDiminished.wav in Resources */,
+				E140F75524D3D29200DE62E2 /* EMajor.wav in Resources */,
+				E140F76024D3D29200DE62E2 /* AMajor.wav in Resources */,
+				E140F78F24D4DF5A00DE62E2 /* ADiminished.wav in Resources */,
+				E140F77824D4CA0600DE62E2 /* GMinor.wav in Resources */,
+				E140F78824D4DF5A00DE62E2 /* D♯E♭Diminished.wav in Resources */,
+				E140F75A24D3D29200DE62E2 /* A♯B♭Major.wav in Resources */,
+				E11B6FE824ABE2B8000D4013 /* LaunchScreen.storyboard in Resources */,
+				E11B6FE524ABE2B8000D4013 /* Assets.xcassets in Resources */,
+				E140F79224D4DF5A00DE62E2 /* F♯G♭Diminished.wav in Resources */,
+				E11B6FE324ABE2B6000D4013 /* Main.storyboard in Resources */,
+				E140F77924D4CA0600DE62E2 /* FMinor.wav in Resources */,
+				E140F79124D4DF5A00DE62E2 /* EDiminished.wav in Resources */,
+				E140F75F24D3D29200DE62E2 /* D♯E♭Major.wav in Resources */,
+				E140F75D24D3D29200DE62E2 /* G♯A♭Major.wav in Resources */,
+				E140F75B24D3D29200DE62E2 /* FMajor.wav in Resources */,
+				E140F79024D4DF5A00DE62E2 /* C♯D♭Diminished.wav in Resources */,
+				E140F78A24D4DF5A00DE62E2 /* A♯B♭Diminished.wav in Resources */,
+				E140F76E24D4CA0600DE62E2 /* CMinor.wav in Resources */,
+				E140F75C24D3D29200DE62E2 /* GMajor.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11B6FD424ABE2B6000D4013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12E936724B12F5500CDE38F /* KeySelectionHeaderView.swift in Sources */,
+				E11B6FDC24ABE2B6000D4013 /* AppDelegate.swift in Sources */,
+				E1D273DA24B417A5007FFA6F /* KeyFamilyViewController.swift in Sources */,
+				E12E936924B13FD000CDE38F /* KeyCollectionViewController.swift in Sources */,
+				E11B6FDE24ABE2B6000D4013 /* SceneDelegate.swift in Sources */,
+				E11B6FF324ABE3E2000D4013 /* HomeController.swift in Sources */,
+				E140F79424DE48F400DE62E2 /* ChordViewController.swift in Sources */,
+				E11B6FF724ABE516000D4013 /* Extensions.swift in Sources */,
+				E1D273DC24B57F44007FFA6F /* KeyTableViewCell.swift in Sources */,
+				E1DF1F7C24B2EAD7009CA6CD /* KeyCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E11B6FE124ABE2B6000D4013 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11B6FE224ABE2B6000D4013 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E11B6FE624ABE2B8000D4013 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11B6FE724ABE2B8000D4013 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11B6FEA24ABE2B8000D4013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E11B6FEB24ABE2B8000D4013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11B6FED24ABE2B8000D4013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38RM5593K9;
+				INFOPLIST_FILE = "Jam Buddy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guerra.Jam-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11B6FEE24ABE2B8000D4013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38RM5593K9;
+				INFOPLIST_FILE = "Jam Buddy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guerra.Jam-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11B6FD324ABE2B6000D4013 /* Build configuration list for PBXProject "Jam Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11B6FEA24ABE2B8000D4013 /* Debug */,
+				E11B6FEB24ABE2B8000D4013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11B6FEC24ABE2B8000D4013 /* Build configuration list for PBXNativeTarget "Jam Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11B6FED24ABE2B8000D4013 /* Debug */,
+				E11B6FEE24ABE2B8000D4013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11B6FD024ABE2B6000D4013 /* Project object */;
+}
